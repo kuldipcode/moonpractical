@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "2cc4fe10-9e9a-46cc-bd15-f1b1e04c128b",
+		"name": "moon practical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27680973",
+		"_collection_link": "https://restless-meteor-886793.postman.co/workspace/02431961-5dec-42db-a127-f0c4b5aee161/collection/27680973-2cc4fe10-9e9a-46cc-bd15-f1b1e04c128b?action=share&source=collection_link&creator=27680973"
+	},
+	"item": [
+		{
+			"name": "API3",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "API2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"highskillCountThreshold\":50,\r\n    \"lowperformanceThreshold\":50,\r\n    \"highexperienceThreshold\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lowskillCountThreshold\":5,\r\n    \"highperformanceThreshold\":80,\r\n    \"lowexperienceThreshold\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
